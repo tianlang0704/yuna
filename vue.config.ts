@@ -1,4 +1,6 @@
-module.exports = {
+import { ProjectOptions } from '@vue/cli-service'
+
+const config: ProjectOptions = {
   css: {
     sourceMap: true,
   },
@@ -14,3 +16,5 @@ module.exports = {
     svgRules.use('raw-loader').loader('raw-loader')
   },
 }
+
+export default config
